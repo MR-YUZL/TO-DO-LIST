@@ -1,38 +1,85 @@
 .App {
-  text-align: center;
+  width           : 500px;
+  margin          : 0 auto;
+  padding         : 20px;
+  background-color: #f5f5f5;
+  border          : 1px solid #e3e3e3;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.click {
+  height          : 30px;
+  line-height     : 30px;
+  padding         : 8px;
+  border-bottom   : 1px solid #ddd;
+  text-decoration : line-through;
+  cursor          : pointer;
+  background-color: #dff0d8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.unClick {
+  height       : 30px;
+  line-height  : 30px;
+  border-bottom: 1px solid #ddd;
+  padding      : 8px;
+  cursor       : pointer;
+  transition   : all .15s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.unClick:hover {
+  background-color: #dff0d8;
 }
 
-.App-link {
-  color: #61dafb;
+.num {
+  height       : 30px;
+  line-height  : 30px;
+  border-radius: 4px;
+  padding      : 8px;
+  cursor       : pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list {
+  border          : 1px solid #ddd;
+  border-radius   : 4px;
+  background-color: #fff;
+  margin-bottom   : 20px;
+}
+
+.enter {
+  float        : right;
+  height       : 34px;
+  width        : 80%;
+  border       : 1px solid #ccc;
+  border-radius: 4px;
+  padding      : 6px 12px;
+  box-sizing   : border-box;
+  transition   : all .15s;
+}
+
+.enter:hover {
+  box-shadow: 0px 0px 2px #337ab7;
+}
+
+.save {
+  float           : right;
+  color           : #fff;
+  height          : 34px;
+  width           : 80px;
+  line-height     : 34px;
+  font-size       : 14px;
+  font-weight     : 500;
+  letter-spacing  : 5px;
+  padding         : 0;
+  box-sizing      : border-box;
+  border          : 1px solid #337ab7;
+  border-radius   : 4px;
+  background-color: #337ab7;
+  zoom            : 1;
+}
+
+.App:after {
+  display   : block;
+  content   : '';
+  clear     : both;
+  visibility: hidden;
+  height    : 0;
 }
